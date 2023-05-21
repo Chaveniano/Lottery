@@ -26,36 +26,36 @@ Para ejecutar el código proporcionado, se requiere un entorno de desarrollo de 
 ## Funcionamiento
 El código Python proporcionado realiza una serie de operaciones relacionadas con la obtención y el análisis de resultados de diferentes loterías. A continuación, se describe brevemente qué hace cada parte del código:
 
-a. Importación de bibliotecas:
+1. Importación de bibliotecas:
 
 requests: Permite realizar solicitudes HTTP para obtener datos de una API.
 pandas: Se utiliza para manipular y analizar datos en forma de DataFrames.
 numpy: Proporciona soporte para operaciones numéricas y manejo de matrices.
 
-b. Solicitud de entrada al usuario:
+2. Solicitud de entrada al usuario:
 
 Se solicita al usuario que ingrese la cantidad de días de resultados que desea obtener.
 Se muestra un menú de opciones para que el usuario elija una lotería.
 
-c. Obtención de datos de la API:
+3. Obtención de datos de la API:
 
 Se construye una URL utilizando la elección del usuario y se realiza una solicitud GET a una API que proporciona los resultados de la lotería seleccionada.
 Se extraen los datos de respuesta en formato JSON y se almacenan en un DataFrame de pandas llamado df_sorteo.
 
-d. Bucle de obtención de resultados históricos:
+4. Bucle de obtención de resultados históricos:
 
 Se itera sobre los identificadores de los sorteos obtenidos anteriormente.
 Se construye una nueva URL para obtener los resultados históricos de cada sorteo.
 Se realiza una solicitud GET a la API y se almacenan los datos de respuesta en un DataFrame llamado df_ganadores.
 Los resultados de cada sorteo se concatenan en el DataFrame consolidado.
 
-e. Análisis de datos y generación de estadísticas:
+5. Análisis de datos y generación de estadísticas:
 
 Se realizan operaciones de limpieza y transformación en el DataFrame consolidado para extraer información relevante de los números y series ganadoras.
 Se realizan análisis estadísticos básicos sobre los números y series ganadoras, generando porcentajes y conteos.
 Se definen funciones para generar propuestas de números y series que superen un umbral de frecuencia definido.
 Se generan propuestas de números y series basadas en los análisis anteriores.
 
-f. Resultados finales:
+6. Resultados finales:
 
 Se imprimen por pantalla las propuestas generadas para los diferentes elementos analizados, tanto para todos los resultados como para el premio mayor.
