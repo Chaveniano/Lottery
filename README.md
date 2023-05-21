@@ -59,3 +59,8 @@ Se generan propuestas de números y series basadas en los análisis anteriores.
 6. Resultados finales:
 
 Se imprimen por pantalla las propuestas generadas para los diferentes elementos analizados, tanto para todos los resultados como para el premio mayor.
+
+## Autor
+
+- Nombre: Sebastian Chaves Tequia
+- Contacto: sebastianchavestequia@gmail.com
