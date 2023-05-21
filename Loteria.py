@@ -2,7 +2,6 @@
 """
 Created on Sun May 21 10:04:52 2023
 
-@author: 50512
 """
 
 import requests
